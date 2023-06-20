@@ -1,10 +1,11 @@
-# timecode.js
+# timecode.js without window references
 
-This is a JavaScript module for manipulating SMPTE timecodes.
+This is a fork of `timecode.js`, a JavaScript module for manipulating SMPTE timecodes.
+This fork is to remove the usage of the `window` browser object, facilitating its backend usages.
 
 It is primarily based on [pytimecode](http://code.google.com/p/pytimecode/).
 
-Theoretically it supports 60, 59.94, 50, 30, 29.97, 25, 24, 23.98 frame rates as well as milliseconds, although only 29.97 (drop and non-drop) and 23.98 have been tested.  Timecodes can be created from: 
+Theoretically it supports 60, 59.94, 50, 30, 29.97, 25, 24, 23.98 frame rates as well as milliseconds, although only 29.97 (drop and non-drop) and 23.98 have been tested.  Timecodes can be created from:
 
 - a number representing the frame count
 - a string in the form "hh:mm:ss:ff"
